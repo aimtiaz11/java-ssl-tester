@@ -6,11 +6,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
-import java.util.Scanner;
 
-class Main {
-
-    final static Logger LOG = LoggerFactory.getLogger(Main.class);
+public class Main {
 
     public static void main(String[] args){
 
@@ -31,7 +28,7 @@ class Main {
             int responseCode = httpresponse.getStatusLine().getStatusCode();
             System.out.println("Response code: " + responseCode);
         } catch (IOException e) {
-
+            e.printStackTrace();
         }
     }
 
