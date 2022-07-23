@@ -3,7 +3,7 @@
 
 ## About
 
-Simple app with a Main class for testing SSL connectivity to any site or system over the net.
+Simple Java command line app for testing SSL connectivity to any site or system over the net.
 
 
 ## Usage
@@ -13,8 +13,7 @@ Download build and package via maven:
 mvn clean package
 ```
 
-Then run the JAR file. First argument should be the URL
-
+Then run the JAR file. First argument should be the URL:
 
 ```
 java -jar java-ssl-tester-1.1.jar "https://wrong.host.badssl.com/"
